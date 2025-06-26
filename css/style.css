@@ -1,0 +1,321 @@
+.font-color-default{
+    color: #302222 !important;
+}
+
+@media only screen and (max-width: 991px) {
+    /* .custom_display_mobile{
+        display: none !important;
+    } */
+
+    .img_custom_size{
+        width: 100% !important;
+    }
+
+    .landing_bg{
+      background: url(../assets/Landing_page_mobile.svg) !important;background-size: 100% !important;background-repeat: no-repeat !important;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    /* .custom_display{
+        display: none !important;
+    } */
+
+    .landing_bg{
+      background-image: url(../assets/Landing_page.svg);background-size: 100%;background-repeat: no-repeat;background-attachment: fixed;
+    }
+    
+}
+
+
+nav{
+  width: 80%;
+  border-radius: 50px; 
+  margin: auto;
+  /* background-color: #e0e7f7; */
+  margin-top: 30px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.678), rgba(255, 255, 255, 0.705));
+}
+
+.navbar.scrolled {
+    /* background-color: whitesmoke !important; */
+    /* background: linear-gradient(135deg, rgba(240, 98, 98, 0.678), rgba(255, 255, 255, 0.705)); */
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 3 2px 28px 0 rgba(255, 255, 255, 0.09) !important;
+    /* animation: 800ms ease-in-out 0s normal none 1 running fadeInDown; */
+}
+
+.navbar-light .navbar-toggler {
+    border-color: rgb(255 255 255) !important;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Dancing+Script:wght@400..700&display=swap');
+
+
+.font_custom {
+/* font-family: 'Roboto', sans-serif; */
+  font-family: "Comic Neue", cursive;
+  /* font-family: 'Poppins', sans-serif; */
+
+  /* font-family: "Overlock", sans-serif; */
+  /* font-family: "Cormorant Garamond", serif; */
+  /* font-family: "PT Serif", serif; */
+  /* font-family: "Figtree", sans-serif; */
+/* font-family: "Satisfy", cursive; */
+line-height: 3rem !important;
+
+}
+
+/* CSS */
+.btn-custom {
+  background-color: #ff6101ab;
+  border: 0 solid #E5E7EB;
+  color: #000000;
+  /* font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
+  /* font-size: 1rem;
+  font-weight: 700; */
+  cursor: pointer;
+  transform: rotate(-2deg);
+}
+
+/* .btn-custom:focus {
+  outline: 0;
+} */
+
+.btn-custom:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.btn-custom:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+  
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Common animation class */
+.fade-up {
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* Delays */
+.delay-1 {
+  animation-delay: 0.2s;
+}
+.delay-2 {
+  animation-delay: 0.5s;
+}
+.delay-3 {
+  animation-delay: 0.8s;
+}
+
+
+/*  */
+/* How it work page */
+/*  */
+
+.voucher-card {
+      
+      background: white;
+      border-radius: 20px;
+      position: relative;
+      text-align: center;
+      padding: 30px 20px;
+      /* box-shadow: 0 8px 20px rgba(0,0,0,0.1); */
+      overflow: hidden;
+      margin-left: 5%;
+      margin: auto;
+      height: 90%;
+    }
+
+    /* Side cutouts */
+    .voucher-card::before,
+    .voucher-card::after {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background: #e6f9f3;
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+    }
+
+    .voucher-card::before {
+      left: -20px;
+    }
+
+    .voucher-card::after {
+      right: -20px;
+    }
+
+    .voucher-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #2c7a7b;
+    }
+
+    .voucher-value {
+      font-size: 40px;
+      color: #f97316;
+      margin: 10px 0;
+    }
+
+    .voucher-icon {
+      color:  #f97316;
+      padding: 10px 20px;
+      display: inline-block;
+      margin-top: 12px;
+      font-weight: 600;
+      font-size: 35px;
+      letter-spacing: 1px;
+    }
+
+    .voucher-note {
+      font-size: 14px;
+      color: #555;
+      margin-top: 10px;
+    }
+ 
+/* Step 3 after */
+
+.cooupon {
+      background: #ef52a8; /* deep red */
+      color: white;
+     
+      height: 250px;
+      position: relative;
+      border-radius: 10px;
+      /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      margin-left: 5%;
+      margin: auto;
+    }
+
+    /* Decorative inner border */
+    .cooupon::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      border-radius: 8px;
+    }
+
+    /* Left and right circular cutouts */
+    .cooupon::after,
+    .cooupon::before {
+      pointer-events: none;
+    }
+
+    .cutout-left,
+    .cutout-right {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background: #e6f9f3;
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+
+    .cutout-left {
+      left: -20px;
+    }
+
+    .cutout-right {
+      right: -20px;
+    }
+
+    .cooupon .label {
+      font-size: 14px;
+      letter-spacing: 2px;
+      opacity: 0.8;
+    }
+
+    .cooupon .discount {
+      font-size: 28px;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+/*  */
+/*  Benifits section */
+/*  */
+
+   .coupon-card {
+  display: flex;
+  font-family: Arial, sans-serif;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.coupon-left {
+  background: #f5f5f5;
+  width: 30%;
+  text-align: center;
+  align-items: center;
+  padding: 10px 0;
+  writing-mode: vertical-rl;
+  /* transform: rotate(180deg); */
+  color: #e53935;
+  font-weight: bold;
+}
+
+.side-text {
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin-right: 7%;
+}
+
+.coupon-right {
+  background: #d32f2f;
+  color: white;
+  padding: 16px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.content {
+  font-size: 14px;
+  color: #ffccbc;
+}
